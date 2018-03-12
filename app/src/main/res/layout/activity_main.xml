@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mfonobongumondia.gitgithub.MainActivity">
+
+
+        <TextView
+            android:id="@+id/gitImage"
+            android:layout_below="@id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/github"
+            android:textSize="45sp"/>
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="116dp"
+        android:background="#F5F5F5"
+        android:backgroundTint="@null"
+        android:hint="@string/enter_name_here_and_click_start"
+        android:padding="7dp"
+        android:textColorHint="#616161"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/startQuiz"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gitImage"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:background="#1976D2"
+        android:onClick="startQuiz"
+        android:text="@string/start_quiz"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/quitQuiz"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gitImage"
+        android:layout_gravity="end"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:background="#FF9E80"
+        android:text="@string/quit"
+        android:onClick="quit"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp" />
+
+    </RelativeLayout>
+
